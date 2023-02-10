@@ -20,7 +20,7 @@ EXPOSE 8080
 EXPOSE 5432
 
 RUN apt-get -y install git
-RUN apt-get install -y python3-pip
+RUN apt-get install -y python3-pip python3.10-venv
 RUN python3 --version && pip3 -V
 RUN apt-get install -y postgresql postgresql-contrib
 RUN apt-get -y install ufw
